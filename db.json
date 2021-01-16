@@ -1,0 +1,10 @@
+{
+
+    "portfolio":{
+        "basic":{
+            "name": "Rohit Sharma",
+            "age": 27,
+            "designation":"Frontend Developer"
+        }
+    }
+  }

@@ -1,0 +1,95 @@
+@import '../../../mainStyles/abstract/variables';
+.welcome_area{
+    min-height: 500px;
+}
+.welcome_inner{
+	.welcome_img{
+		background: #eeeeee;
+		margin-left: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 30px;
+		img{
+			margin-top: -30px;
+		}
+	}
+}
+.welcome_text{
+	h4{
+		color: #222222;
+		font-family: $hee;
+		font-size: 36px;
+		margin-bottom: 18px;
+		text-transform: uppercase;
+	}
+	p{
+		max-width: 495px;
+		font-family: 'Roboto', sans-serif;;
+		margin-bottom: 40px;
+	}
+}
+.wel_item{
+	border: 1px solid #eeeeee;
+	padding: 20px 20px;
+	border-radius: 5px;
+	i{
+		font-size: 24px;
+		background: linear-gradient(to right, #766dff 0%, #86e7ff 70%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h4{
+		font-size: 24px;
+		font-family: $hee;
+		font-weight: bold;
+		color: $dip;
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
+	p{
+		font-size: 16px;
+		font-family: $rob;
+		color: $pfont;
+		margin-bottom: 0px;
+	}
+}
+.tools_expert{
+	padding: 20px 0px 0px 0px;
+	.skill_main{
+		.skill_item{
+			margin-bottom: 18px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			h4{
+				text-align: none;
+				font-size: 14px;
+				font-family: $rob;
+				font-weight: 500;
+				color: $dip;
+				margin-bottom: 15px;
+			}
+			.progress_br{
+				border: 1px solid #eeeeee;
+				padding: 5px;
+				border-radius: 10px;
+			}
+			.progress{
+				height: 10px;
+				border-radius: 10px;
+				background: #e8e8e8;
+				.progress-bar{
+					width: 0%;
+					transition: width .6s ease;
+					height: 10px;
+					border-radius: 5px;
+					vertical-align: middle;
+					align-self: center;
+					background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+					background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+					background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+				}
+			}
+		}
+	}
+}

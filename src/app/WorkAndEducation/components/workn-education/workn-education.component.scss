@@ -1,0 +1,110 @@
+@import '../../../../mainStyles/abstract/variables';
+
+
+/* My Tabs Area css
+============================================================================================ */
+.mytabs_area{
+	background-image: -moz-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(118,109,255) 0%, rgb(136,243,255) 100%);
+}
+.tabs_inner{
+	.nav.nav-tabs{
+		display: block;
+		text-align: center;
+		border: none;
+		margin-bottom: 120px;
+		li{
+			display: inline-block;
+			margin-right: 8px;
+			a{
+				margin: 0px;
+				line-height: 50px;
+				border-radius: 5px;
+				padding: 0px 40px;
+				font-size: 13px;
+				font-weight: 500;
+				color: #fff;
+				font-family: $rob;
+				border: 1px solid #9ab5f5;
+				background: rgba(255, 255, 255, .1);
+				&.active{
+					background: #fff;
+					color: $dip;
+				}
+			}
+		}
+	}
+	.tab-content{
+		.tab-pane{
+			.list{
+				max-width: 460px;
+				margin: auto;
+				position: relative;
+				padding-top: 40px;
+				padding-bottom: 60px;
+				&:before{
+					content: "";
+					height: 100%;
+					width: 5px;
+					background: rgba(255, 255, 255, .20);
+					position: absolute;
+					left: 46%;
+					transform: translateX(-50%);
+					top: -5px;
+				}
+				li{
+					margin-bottom: 60px;
+					position: relative;
+					span{
+						height: 15px;
+						width: 15px;
+						border-radius: 50%;
+						display: block;
+						background: rgba(255, 255, 255, .2);
+						position: absolute;
+						left: 46%;
+						top: 30px;
+						transform: translateX(-50%);
+						&:before{
+							content: '';
+							height: 7px;
+							width: 7px;
+							background: #fff;
+							border-radius: 50%;
+							position: absolute;
+							left: 52%;
+							top: 4px;
+							transform: translateX(-50%);
+						}
+					}
+					&:last-child{
+						margin-bottom: 0px;
+					}
+					.media{
+						.d-flex{
+							padding-right: 100px;
+							p{
+								color: rgba(255, 255, 255, .75);
+								margin-bottom: 0px;
+								padding-top: 20px;
+							}
+						}
+						.media-body{
+							h4{
+								color: #fff;
+								font-size: 21px;
+								text-transform: uppercase;
+								margin-bottom: 20px;
+							}
+							p{
+								color: rgba(255, 255, 255, .75);
+								margin-bottom: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
