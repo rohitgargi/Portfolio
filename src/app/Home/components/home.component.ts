@@ -8,12 +8,20 @@ import { ApiService } from 'src/app/Shared/services/api.service';
 })
 
 export class HomeComponent implements OnInit{
+    basicDetail:any;
     constructor(private apiservice: ApiService){
         
     }
-
     
     ngOnInit(){
-         
+        this.getBasicDetail();
+    }
+
+    getBasicDetail() {
+        this.apiservice.getBasicDetail('home').subscribe( res =>{
+            if(res){
+                this.basicDetail = res;
+            }
+        })
     }
 }

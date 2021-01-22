@@ -1,5 +1,6 @@
 export interface IBasic{
     "name": string,
     "age:":number,
-    "designation":string
+    "designation":string,
+    "about":string
 }

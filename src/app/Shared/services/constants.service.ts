@@ -6,5 +6,5 @@ import { Injectable } from '@angular/core';
 })
 
 export class Constants{
-    readonly baseurl: string = 'https://portfolio-b30d8-default-rtdb.firebaseio.com/'
+    readonly baseurl: string = 'http://localhost:3000'
 }

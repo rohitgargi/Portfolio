@@ -13,8 +13,8 @@ export class ApiService{
 
     }
 
-    // getBasicDetail():Observable<IBasic>{
-    //     const url = this.constants.baseurl;
-    //     return this.http.get<IBasic>(url);
-    // }
+    getBasicDetail(param):Observable<IBasic>{
+        const url = this.constants.baseurl;
+        return this.http.get<IBasic>(url+'/'+param);
+    }
 }

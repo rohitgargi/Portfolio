@@ -1,10 +1,11 @@
 {
-
-    "portfolio":{
-        "basic":{
-            "name": "Rohit Sharma",
-            "age": 27,
-            "designation":"Frontend Developer"
-        }
+    "home":{
+        "name": "Rohit Sharma",
+        "age": 27,
+        "dob":"02/03/1993",
+        "designation":"Frontend Developer",
+        "about":"I have more than 6 year of experience doing web development. I always think learning never ends and so do practice. ",
+        "address": "ABC Block plaza Yamunanagar 135103"
     }
+    
   }
