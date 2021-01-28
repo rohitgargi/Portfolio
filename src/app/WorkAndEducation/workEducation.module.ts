@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { WorknEducationComponent } from './components/workn-education/workn-education.component';
 import { WorknEducationRoutingModule } from './worknEducation-routing.module';
@@ -8,6 +9,7 @@ import { WorknEducationRoutingModule } from './worknEducation-routing.module';
     WorknEducationComponent
   ],
   imports: [
+    CommonModule,
     WorknEducationRoutingModule
   ],
   providers: [],

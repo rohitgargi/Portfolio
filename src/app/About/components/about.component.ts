@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { IAbout } from './../../models/IAbout';
+import { ApiService } from 'src/app/Shared/services/api.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'portfolio-about',
@@ -6,6 +8,16 @@ import { Component } from '@angular/core';
     styleUrls:['./about.component.scss']
 })
 
-export class AboutComponent{
+export class AboutComponent implements OnInit {
+    aboutDetail:IAbout
+    constructor(private aboutService: ApiService){
 
+    }
+
+    ngOnInit(){
+        this.aboutService.getAboutDetail('about').subscribe(detail =>{
+            console.log(detail)
+            this.aboutDetail = detail;
+        })
+    }
 }

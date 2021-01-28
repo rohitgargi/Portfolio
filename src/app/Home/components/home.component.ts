@@ -9,12 +9,14 @@ import { ApiService } from 'src/app/Shared/services/api.service';
 
 export class HomeComponent implements OnInit{
     basicDetail:any;
+    quoteObj:any;
     constructor(private apiservice: ApiService){
         
     }
     
     ngOnInit(){
         this.getBasicDetail();
+        this.getQuotes();
     }
 
     getBasicDetail() {
@@ -24,4 +26,17 @@ export class HomeComponent implements OnInit{
             }
         })
     }
+    generateRandomIndex(arLength){
+        return Math.floor(Math.random()* arLength + 1)
+    }
+
+    getQuotes(){
+        this.apiservice.getQuotes().subscribe(res => {
+            if(res && res.length){
+                let index  = this.generateRandomIndex(res.length);
+                this.quoteObj = res[index];
+            }
+        })
+    }
+
 }

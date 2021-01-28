@@ -1,6 +1,13 @@
 .poc-container{
     min-height: 500px;
     padding:20px;
+    .card{
+        height: 398px;
+        margin-bottom:20px !important;
+        .card-title{
+            margin: 0 0 10px 0 !important;
+        }
+    }
     .img-container{
         height: 200px;
     }

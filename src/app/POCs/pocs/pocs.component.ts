@@ -1,3 +1,5 @@
+import { IPoc } from './../../models/IPoc';
+import { ApiService } from 'src/app/Shared/services/api.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pocs.component.scss']
 })
 export class PocsComponent implements OnInit {
-
-  constructor() { }
+  pocList:IPoc[];
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.getPocs();
+  }
+
+  getPocs(){
+    this.apiService.getPocs('pocs').subscribe(pocs=>{
+      if(pocs.length){
+        this.pocList = pocs;
+      }
+    })
   }
 
 }

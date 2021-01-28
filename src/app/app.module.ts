@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     HttpClientModule,
     CoreModule,

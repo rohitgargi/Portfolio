@@ -6,6 +6,96 @@
         "designation":"Frontend Developer",
         "about":"I have more than 6 year of experience doing web development. I always think learning never ends and so do practice. ",
         "address": "ABC Block plaza Yamunanagar 135103"
-    }
+    },
+    "about":{
+        "aboutme":"I am currently working in US based MNC. I have more than 6 years of experience in User Interface Development using Angular, AngularJs,JavaScript, twitter bootstrap, jquery , HTML5 and CSS3 . I am an organized, well planned and productive team player. I have developed User Interfaces which are browser compatible and user friendly",
+        "skillMapping":[{
+            "title":"Angular",
+            "weightage": "80"
+        },{
+            "title":"JavaScript",
+            "weightage": "80"
+        },{
+            "title":"JQuery",
+            "weightage": "70"
+        },{
+            "title":"HTML",
+            "weightage": "80"
+        },
+        {
+            "title":"CSS",
+            "weightage": "80"
+        },{
+            "title":"Bootstrap",
+            "weightage": "60"
+        },
+        {
+            "title":"React",
+            "weightage": "50"
+        },{
+            "title":"Node",
+            "weightage": "30"
+        }]
+    },
+    "expTimeLine":[{
+        "firstDate": "Oct 2019",
+        "secondDate":"Present",
+        "companyName": "Publicis Sapient",
+        "designation":"Frontent Developer",
+        "location": "Sector 21, Gurugram"
+    },{
+        "firstDate": "May 2017",
+        "secondDate":"Oct 2019",
+        "companyName": "Tata Consultancy Services",
+        "designation":"Frontent Developer",
+        "location": "Sector 80, Noida"
+    },{
+        "firstDate": "Septmber 2014",
+        "secondDate":"May 2017",
+        "companyName": "Tata Consultancy Services",
+        "designation":"Frontent Developer",
+        "location": "Siruseri, Chennai"
+    }],
+    "eduTimeLine":[{
+        "firstDate": "June 2011",
+        "secondDate":"June 2014",
+        "companyName": "JMIT RADAUR",
+        "designation":"BTECH",
+        "location": "Radaur, Yamunanagar"
+    },{
+        "firstDate": "May 2008",
+        "secondDate":"April 2011",
+        "companyName": "SJPP Damla",
+        "designation":"Polytechnic",
+        "location": "Damla, Yamunanagar"
+    },{
+        "firstDate": "March 2007",
+        "secondDate":"March 2008",
+        "companyName": "Saraswati High Schools",
+        "designation":"Matriculation",
+        "location": "Chhachhrauli, Yamunanagar"
+    }],
+    
+    "pocs":[{
+        "type":"angular",
+        "title":"Lazy lpoad of Modules",
+        "isHosted": true,
+        "url":"https://rohitgargi.github.io/lazy-load-app/lazy-load-app/home"
+    },{
+        "type":"angular",
+        "title":"Shopping Cart",
+        "isHosted": false,
+        "url":"https://github.com/rohitgargi/shopping-cart-assignment"
+    },{
+        "type":"javaScript",
+        "title":"Cartoon Character's app",
+        "isHosted": false,
+        "url":"https://github.com/rohitgargi/characters-assignment-solution"
+    },{
+        "type":"javaScript",
+        "title":"DOM manipulation",
+        "isHosted": true,
+        "url":"https://rohitgargi.github.io/JavascriptDomManipulation"
+    }]
     
   }

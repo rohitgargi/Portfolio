@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { PocsRoutingModule } from './pocs-routing.module';
 import { PocsComponent } from './pocs/pocs.component';
@@ -8,6 +9,7 @@ import { PocsComponent } from './pocs/pocs.component';
     PocsComponent
   ],
   imports: [
+    CommonModule,
     PocsRoutingModule
   ],
   providers: [],

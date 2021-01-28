@@ -8,4 +8,8 @@ import { Component,HostListener } from '@angular/core';
 
 export class PortfolioHeader{
     
+
+    onTogglerClick(e:any){
+        console.log(e.target)
+    }
 }

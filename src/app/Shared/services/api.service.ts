@@ -1,3 +1,6 @@
+import { IPoc } from './../../models/IPoc';
+import { IExperience } from './../../models/IExperience';
+import { IAbout } from './../../models/IAbout';
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import {Constants} from './constants.service';
@@ -16,5 +19,26 @@ export class ApiService{
     getBasicDetail(param):Observable<IBasic>{
         const url = this.constants.baseurl;
         return this.http.get<IBasic>(url+'/'+param);
+    }
+
+    getAboutDetail(param):Observable<IAbout>{
+        const url = this.constants.baseurl;
+        return this.http.get<IAbout>(url+'/'+param);
+    }
+
+    getTimeline(param):Observable<IExperience[]>{
+        const url = this.constants.baseurl;
+        return this.http.get<IExperience[]>(url+'/'+param);
+    }
+
+    //http://quotes.stormconsultancy.co.uk/quotes.json
+
+    getQuotes():Observable<any[]>{
+        const url = this.constants.baseurl;
+        return this.http.get<any[]>('http://quotes.stormconsultancy.co.uk/quotes.json');
+    }
+    getPocs(param):Observable<IPoc[]>{
+        const url = this.constants.baseurl;
+        return this.http.get<IPoc[]>(url+'/'+param);
     }
 }
